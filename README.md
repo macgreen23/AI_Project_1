@@ -7,12 +7,11 @@ This repository implements several simple classifiers for MNIST provided as raw 
 - Multilayer Perceptron (PyTorch)
 - Convolutional Neural Network (PyTorch)
 
-Quick environment setup (CPU)
+Quick environment setup
 ```bash
 python -m pip install --upgrade pip
 python -m pip install numpy pillow matplotlib scikit-learn tqdm torch
 ```
-If you have CUDA, install the matching CUDA-enabled PyTorch from https://pytorch.org/get-started/locally/.
 
 How to run
 - RUN ALL:
@@ -50,4 +49,5 @@ Notes
 - The repository uses `preprocessing.py` helpers to load PNG images and return either NumPy arrays (`collect_np_dataset`) or PyTorch tensors (`collect_torch_dataset`).
 - Labels are integer class indices (0–9). PyTorch models expect targets as `torch.long` when using `CrossEntropyLoss`.
 - `tqdm` is only needed to run `k_nearest_neighbors.py` as it helps determine the length of time to finish processing.
+- Code is only tested using python 3.13.7
 
