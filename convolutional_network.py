@@ -8,9 +8,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from icecream import ic
 from sklearn.metrics import classification_report, confusion_matrix
-from tqdm import tqdm
 
 from preprocessing import collect_torch_dataset
 
